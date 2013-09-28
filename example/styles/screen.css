@@ -1,0 +1,125 @@
+/* line 5, ../src/modules/_grid.scss */
+.wrapper {
+  max-width: 70em;
+}
+/* line 8, ../src/modules/_grid.scss */
+.wrapper * {
+  box-sizing: border-box;
+}
+
+/* line 12, ../src/modules/_grid.scss */
+.wrapper, .threeColsSetion, .meaningfulClassName1, .meaningfulClassName2 {
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 16, ../src/modules/_grid.scss */
+.wrapper:before, .threeColsSetion:before, .meaningfulClassName1:before, .meaningfulClassName2:before, .wrapper:after, .threeColsSetion:after, .meaningfulClassName1:after, .meaningfulClassName2:after {
+  content: " ";
+  display: table;
+}
+/* line 20, ../src/modules/_grid.scss */
+.wrapper:after, .threeColsSetion:after, .meaningfulClassName1:after, .meaningfulClassName2:after {
+  clear: both;
+}
+
+/* line 41, ../src/modules/_grid.scss */
+.wrapper, .threeColsSetion, .meaningfulClassName1, .meaningfulClassName2 {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+/* line 7, ../src/screen.scss */
+.wrapper {
+  outline: 1px dashed red;
+}
+
+/* line 14, ../src/screen.scss */
+.mainContent {
+  padding: 0 0.8em;
+  float: left;
+  width: 80%;
+  background: #ccc;
+}
+
+/* line 19, ../src/screen.scss */
+.sidebar {
+  padding: 0 0.8em;
+  float: left;
+  width: 20%;
+  background: #ededed;
+}
+
+/* line 28, ../src/screen.scss */
+.threeColsSetion .gridArticle {
+  padding: 0 1.5%;
+  width: 34.33333%;
+}
+/* line 4, ../src/modules/_eteColumns.scss */
+.threeColsSetion .gridArticle:first-child {
+  width: 32.83333%;
+  padding-left: 0;
+}
+/* line 8, ../src/modules/_eteColumns.scss */
+.threeColsSetion .gridArticle:last-child {
+  width: 32.83333%;
+  padding-right: 0;
+}
+
+/* line 38, ../src/screen.scss */
+.meaningfulClassName1 .class1 {
+  padding: 0 1.5%;
+  width: 34.33333%;
+}
+/* line 4, ../src/modules/_eteColumns.scss */
+.meaningfulClassName1 .class1:first-child {
+  width: 32.83333%;
+  padding-left: 0;
+}
+/* line 8, ../src/modules/_eteColumns.scss */
+.meaningfulClassName1 .class1:last-child {
+  width: 32.83333%;
+  padding-right: 0;
+}
+/* line 41, ../src/screen.scss */
+.meaningfulClassName1 .class1 .class2 {
+  background: #ededed;
+  padding: 0.4em;
+}
+
+/* line 53, ../src/screen.scss */
+.meaningfulClassName2 .class1 {
+  padding: 0 1.25%;
+  width: 20.5%;
+}
+/* line 4, ../src/modules/_eteColumns.scss */
+.meaningfulClassName2 .class1:first-child {
+  width: 19.25%;
+  padding-left: 0;
+}
+/* line 8, ../src/modules/_eteColumns.scss */
+.meaningfulClassName2 .class1:last-child {
+  width: 19.25%;
+  padding-right: 0;
+}
+/* line 56, ../src/screen.scss */
+.meaningfulClassName2 .class1 .class2 {
+  background: #ededed;
+  padding: 0.4em;
+}
+
+/* line 66, ../src/screen.scss */
+.gridArticle {
+  background: pink;
+  outline: 1px dashed black;
+}
+
+/* line 71, ../src/screen.scss */
+.noBgForGridArticle .gridArticle {
+  background: transparent;
+}
+/* line 73, ../src/screen.scss */
+.noBgForGridArticle .gridArticle div {
+  background: #fff;
+}

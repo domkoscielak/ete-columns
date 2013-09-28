@@ -1,0 +1,38 @@
+@mixin eteColumn($fraction, $gutter){
+	padding: 0 eteGutter($fraction, $gutter);
+	width: eteMidWidth($fraction, $gutter);
+	&:first-child{
+		width: eteEdgeWidth($fraction, $gutter);
+		padding-left: 0;
+	}
+	&:last-child{
+		width: eteEdgeWidth($fraction, $gutter);
+		padding-right: 0;
+	}
+}
+
+@function eteGutter($fraction, $gutter){
+	$colNo: 1 / $fraction;
+	$sumGutter: $gutter * $colNo ;
+	$newGutter: ($sumGutter / ($colNo - 1)) / 2;
+	@return $newGutter;
+
+}
+
+@function eteMidWidth($fraction, $gutter){
+	$colNo: 1 / $fraction;
+	$width: (100% / $colNo) - $gutter ;
+	$sumGutter: $gutter * $colNo ;
+	$newGutter: $sumGutter / ($colNo - 1);
+	$width: $width + $newGutter;
+	@return $width;
+}
+
+@function eteEdgeWidth($fraction, $gutter){
+	$colNo: 1 / $fraction;
+	$width: (100% / $colNo) - $gutter ;
+	$sumGutter: $gutter * $colNo ;
+	$newGutter: ($sumGutter / ($colNo - 1))/2;
+	$width: $width + $newGutter;
+	@return $width;
+}

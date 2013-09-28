@@ -1,0 +1,77 @@
+@import 'modules/grid',
+'modules/eteColumns';
+//** STYLES
+
+
+
+.wrapper{
+	@extend %siteWrapper;
+	outline: 1px dashed red;
+
+}
+
+
+.mainContent{
+	@include gridCol(4/5);
+	background: #ccc;
+
+}
+.sidebar{
+	@include gridCol(1/5);
+	background: #ededed;
+}
+
+//ete grid
+.threeColsSetion{
+	@extend %gridRow;
+
+	.gridArticle{
+		@include eteColumn(1/3, 2%);
+	}
+}
+
+//ete grid
+.meaningfulClassName1{
+	//this is our row
+	@extend %gridRow;
+
+	.class1{
+		//this is our column container
+		@include eteColumn(1/3, 2%); //width one third of available space and a gutter calculated from 2% of given space
+		.class2{
+			//this is our column, so let's style it 
+			background: #ededed;
+			padding: 0.4em;
+		}
+
+	}
+}
+.meaningfulClassName2{
+	//this is our row
+	@extend %gridRow;
+
+	.class1{
+		//this is our column container
+		@include eteColumn(1/5, 2%); //width one third of available space and a gutter calculated from 2% of given space
+		.class2{
+			//this is our column, so let's style it 
+			background: #ededed;
+			padding: 0.4em;
+		}
+
+	}
+}
+
+//debug STYLES
+.gridArticle{
+	background: pink;
+	outline: 1px dashed black;
+}
+.noBgForGridArticle{
+	.gridArticle{
+		background: transparent;
+		div{
+			background: #fff;
+		}
+	}
+}

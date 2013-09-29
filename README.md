@@ -20,5 +20,7 @@ This is a simple solution for a real life problem - inserting an ad hoc (or not 
 example 
 
 ```html
+
 @include eteColumn(1/3, 2%);
+
 '''

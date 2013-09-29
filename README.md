@@ -22,5 +22,3 @@ example
 ```html
 
 @include eteColumn(1/3, 2%);
-
-'''

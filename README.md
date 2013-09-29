@@ -10,7 +10,15 @@ This is a simple solution for a real life problem - inserting an ad hoc (or not 
 ###Usage
 1. Import the module 
 
-```@import 'modules/eteColumns';
+```html
+@import 'modules/eteColumns';
+```
 
 2. Include the mixin
 3. Pass fraction of parent for the column width and percentage for spacing between columns
+
+example 
+
+```html
+@include eteColumn(1/3, 2%);
+'''

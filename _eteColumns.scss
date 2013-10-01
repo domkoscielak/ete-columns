@@ -1,6 +1,7 @@
 @mixin eteColumn($fraction, $gutter){
 	padding: 0 eteGutter($fraction, $gutter);
 	width: eteMidWidth($fraction, $gutter);
+	float: left;
 	&:first-child{
 		width: eteEdgeWidth($fraction, $gutter);
 		padding-left: 0;
